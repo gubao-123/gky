@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f9fc;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+select, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#word-count {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.loading {
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.word-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.word-row {
+    margin: 15px 0;
+    font-size: 20px;
+    min-height: 30px;
+}
+
+#english-row {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#split-row {
+    font-size: 22px;
+    color: #3498db;
+    letter-spacing: 3px;
+}
+
+#phonetic-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#phonetic {
+    font-style: italic;
+    color: #e74c3c;
+}
+
+#pronounce-btn {
+    background: none;
+    border: none;
+    color: #3498db;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#chinese-row {
+    font-size: 18px;
+    color: #27ae60;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#answer-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+#feedback {
+    font-weight: bold;
+}
+
+.correct {
+    color: #27ae60;
+}
+
+.incorrect {
+    color: #e74c3c;
+}
+
+.example-row {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.bottom-panel {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#next-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .control-panel {
+        flex-direction: column;
+    }
+    
+    #answer-input {
+        width: 200px;
+    }
+    
+    .word-row {
+        font-size: 18px;
+    }
+    
+    #english-row {
+        font-size: 24px;
+    }
+}

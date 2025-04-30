@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语单词疯狂记忆学习</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>英语单词疯狂记忆学习</h1>
+    </div>
+    
+    <div class="control-panel">
+        <select id="group-select">
+            <option value="">请选择题组</option>
+            <!-- 动态加载题组选项 -->
+        </select>
+        <span id="word-count">未学: 0 / 总数: 0</span>
+        <button id="start-btn">开始学习</button>
+    </div>
+    
+    <div class="loading" id="loading">正在加载单词数据库...</div>
+    
+    <div class="word-container" id="word-container" style="display: none;">
+        <div class="word-row" id="english-row"></div>
+        <div class="word-row" id="split-row"></div>
+        <div class="word-row" id="phonetic-row">
+            <span id="phonetic"></span>
+            <button id="pronounce-btn">🔊 读音</button>
+        </div>
+        <div class="word-row" id="chinese-row"></div>
+        
+        <div class="word-row" id="input-row" style="display: none;">
+            <input type="text" id="answer-input" placeholder="请输入英文单词">
+            <span id="feedback"></span>
+        </div>
+        
+        <div class="example-row" id="example1-row" style="display: none;"></div>
+        <div class="example-row" id="example2-row" style="display: none;"></div>
+        <div class="example-row" id="example3-row" style="display: none;"></div>
+    </div>
+    
+    <div class="bottom-panel">
+        <button id="next-btn" style="display: none;">下一个</button>
+    </div>
+
+    <audio id="pronunciation"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
